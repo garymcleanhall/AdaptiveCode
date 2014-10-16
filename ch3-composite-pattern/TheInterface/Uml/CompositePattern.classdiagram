@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="7e42a930-4c29-4e4f-a108-0e5d6187a022" name="CompositePattern" linkedPackageId="23ca1e77-d195-42be-9de5-b48afefe806a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="8506c040-39d1-43f0-b3c6-21df79f19e90">
+      <elementDefinition Id="e732751d-07f9-4347-96c3-228b8b72a3b4" />
+      <body>for(var child in components)
+  child.Something();</body>
+      <annotatedElements>
+        <classMoniker Id="05c86308-2bee-4fff-8ab3-46c0b4059b8a" LastKnownName="Composite" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="af697a45-a549-40fb-a042-40dbbdf0c9f5">
+      <profileInstance Id="bf19bd63-5201-4c4f-beb6-4313164289c8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="884cb9ee-46a2-40fa-961f-e87151fd3856">
+      <profileInstance Id="9f13b281-746b-4511-8a53-3501ce7a761f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="4c55a98e-faf3-49e6-b8a7-74c07afa1647" name="IComponent" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0da5e9f4-e77f-466e-ad79-87130bcc99fb" />
+        <ownedOperations>
+          <operation Id="7a6ca724-b0c6-4c31-a8d7-2f096a1674cb" name="Something" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="434d47e5-d888-4d39-87a9-6c326c154a31" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5e83ac26-acc2-4491-b6ac-df0ab39509db" name="Leaf" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9915b5c6-b74d-4f8f-b881-a22ebe103444" />
+        <suppliersInternal>
+          <interfaceRealization Id="a6759ee5-2ea0-4313-ac3a-19c4fec710df">
+            <interfaceMoniker Id="4c55a98e-faf3-49e6-b8a7-74c07afa1647" LastKnownName="IComponent" />
+            <elementDefinition Id="f452e560-0eaa-4c2f-87ec-dc9f01e2e2df" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="fe0192cc-07eb-4335-be05-0a0c8366c29b" name="Something" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="16f6484b-174a-4f6b-806b-850684d646b2" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="05c86308-2bee-4fff-8ab3-46c0b4059b8a" name="Composite" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0e71e762-6a2b-4c54-9968-a898bb57624d" />
+        <suppliersInternal>
+          <interfaceRealization Id="24883baa-9358-4fac-8d71-19c0865a1d59">
+            <interfaceMoniker Id="4c55a98e-faf3-49e6-b8a7-74c07afa1647" LastKnownName="IComponent" />
+            <elementDefinition Id="1690d210-086e-43a7-8f8d-98c69e67973d" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="ac5e8858-fc25-4e9c-9661-c7ef8661796b" isDerived="false" sourceEndRoleName="parent" targetEndRoleName="child" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="4c55a98e-faf3-49e6-b8a7-74c07afa1647" LastKnownName="IComponent" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8198064e-f10c-4e10-94dd-b2159b0c46d5" name="parent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="a3a026a6-cf6d-498f-81c8-738acf8fc3f3" name="Lower" value="1">
+                      <elementDefinition Id="aa194a1f-e2a2-42cb-b6e1-198e8de0d19c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="0b6944c2-4918-4eac-a547-8bd6d394cd19" name="Upper" value="1">
+                      <elementDefinition Id="5aa7a556-da21-4700-8639-1e840c3243b4" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="730e9aa6-e629-42ed-9b34-ed312ef594fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f42010bb-4c98-4486-a833-d38021ce78e9" name="child" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c6d90436-1db5-48e4-9efb-b88f896d6650" name="Lower" value="0">
+                      <elementDefinition Id="ef5a58d7-2497-4b9e-99b4-9340e8934994" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f41b609e-fa78-4ae4-8a23-0690c844e7b2" name="Upper" value="*">
+                      <elementDefinition Id="512bd0a9-518c-43bc-ad04-ae8181e6b019" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8eec8d60-5700-4e2b-a9b8-e32dc01126b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="16f48c5f-0e11-41f7-9332-fd09b3f77a2d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3bac52c0-ea5f-4e3d-8594-59e559256cb0" name="components" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="473226c6-4e6b-4535-87ba-f0ff14cd66c7" name="Lower" value="*">
+                <elementDefinition Id="4bfaf552-b6bc-42c1-9bcd-693b3cbb7eed" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="688a805d-673f-475e-aa6a-72018196f9b3" name="Upper" value="*">
+                <elementDefinition Id="d8230e61-e00f-4f8b-befc-bba2acd18249" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="524aada1-d6fd-4d55-914f-92cba1fc47be" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ff98ef0c-edbf-4db5-8d59-757fe007d25b" name="Something" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="882b5fe2-d172-47e3-87df-543e5ae461fb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="23ca1e77-d195-42be-9de5-b48afefe806a" name="Uml">
+    <elementDefinition Id="1138b02e-71e3-4fdb-aa57-373f47d71b57" />
+  </package>
+</logicalClassDesignerModel>

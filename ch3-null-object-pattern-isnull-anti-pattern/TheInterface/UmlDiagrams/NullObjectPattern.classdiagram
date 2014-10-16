@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="65d86c7d-1e52-4e34-8fab-6e6b37bc735d" name="NullObjectPattern" linkedPackageId="a059a30f-1f4a-4235-a098-d6e5bd0a6427" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="05a1117d-8e70-4b80-878a-a9a8d97cc07f">
+      <elementDefinition Id="ba272654-12f6-4ce7-a5b6-b25c838a1241" />
+      <body>do nothing</body>
+      <annotatedElements>
+        <classMoniker Id="09e5f25a-8c9a-4232-b13c-fef80b6d621b" LastKnownName="NullObject" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="dcc8d2b4-24ed-4bb7-b0bb-70250d7c5808">
+      <profileInstance Id="b0508498-62a1-4eef-b90a-72be7bc092f2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ef3d5173-1632-43fa-a107-1e1ee3f4de74">
+      <profileInstance Id="3e558c6a-3ae5-4313-9f5e-b2006bdbe3bc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="15250770-b77f-4311-bb9d-a9126bd7e66f" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4c2a2f7f-a219-4bb5-9375-e6063ad1fcf4" />
+        <suppliersInternal>
+          <dependency Id="d13261be-cb8b-4467-8e7e-8a7c14b838c0">
+            <interfaceMoniker Id="bec4f70c-4663-4bb1-9848-60da0dde7c01" LastKnownName="IAbstraction" />
+            <elementDefinition Id="910bfffa-382a-4f01-8e04-ef1d26bf3d33" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="bec4f70c-4663-4bb1-9848-60da0dde7c01" name="IAbstraction" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="29710310-074e-42f5-aa1b-65222530182b" />
+        <ownedOperations>
+          <operation Id="7f55778e-9ffb-45ab-bab5-135a853c40b5" name="Request" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6005be31-5189-48bf-a0bc-bd6a6aec38e9" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="db70c70e-5f51-420f-b3cc-a79f66116a25" name="RealObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ff24cdfb-dca1-46b8-866c-79588a83478c" />
+        <suppliersInternal>
+          <interfaceRealization Id="f1122090-127c-49c5-886e-0f37948d3c16">
+            <interfaceMoniker Id="bec4f70c-4663-4bb1-9848-60da0dde7c01" LastKnownName="IAbstraction" />
+            <elementDefinition Id="951b25aa-c3b0-40d2-91b3-96a2884269ea" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="0a42af51-bac9-4a45-9e53-9d6a5bac4697" name="Request" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="55a61b0d-175c-4ceb-9da9-143838a76464" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="09e5f25a-8c9a-4232-b13c-fef80b6d621b" name="NullObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="083c42e8-43cc-4aa4-afd4-2963939fee3b" />
+        <suppliersInternal>
+          <interfaceRealization Id="3cfedc38-a751-410f-8f37-3a0f6e3c4d68">
+            <interfaceMoniker Id="bec4f70c-4663-4bb1-9848-60da0dde7c01" LastKnownName="IAbstraction" />
+            <elementDefinition Id="fd612538-1cdc-48d2-a562-81a3812fc3d9" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="f2c93f1e-86ef-48cf-a0a3-bec9dfb28a92" name="Request" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="85c50892-90f8-4805-b1df-acfa05823eec" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a059a30f-1f4a-4235-a098-d6e5bd0a6427" name="UmlDiagrams">
+    <elementDefinition Id="16db3a08-9de5-4e59-abc7-06f8fe0b42b2" />
+  </package>
+</logicalClassDesignerModel>

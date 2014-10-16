@@ -1,0 +1,49 @@
+**
+**  NOTICE file corresponding to the section 4 (4) of the Apache License, 
+**  Version 2.0.
+**
+
+re-motion Framework
+www.re-motion.org
+Copyright (c) rubicon IT GmbH, www.rubicon.eu
+
+This software includes the following libraries:
+
+Castle.Core.dll
+Copyright 2004-2011 Castle Project 
+Original software available from http://www.castleproject.org/
+
+log4net.dll
+Copyright 2001-2007 The Apache Software Foundation
+Original software available from http://logging.apache.org/log4net/
+Original license notice below
+
+   **
+   **  NOTICE file corresponding to the section 4 (d) of the Apache License, 
+   **  Version 2.0, in this case for the Apache log4net distribution.
+   **
+   
+   Please read the LICENSE files present in the root directory of this 
+   distribution.
+   
+   Apache log4net
+   Copyright 2001-2007 The Apache Software Foundation
+   
+   This product includes software developed at
+   The Apache Software Foundation (http://www.apache.org/).
+
+ICSharpCode.SharpZipLib
+Copyright 2000-2009 IC#Code
+Original software available from http://www.icsharpcode.net/OpenSource/SharpZipLib/
+
+IronPython.dll and IronPython.Modules.dll
+Copyright Microsoft
+Original software available from http://ironpython.codeplex.com/
+
+Microsoft.Practices.ServiceLocation.dll
+Copyright 2008 Microsoft
+Original software available from http://commonservicelocator.codeplex.com/
+
+Microsoft.Scripting.Core.dll, Microsoft.Scripting.dll, and Microsoft.Scripting.ExtensionAttribute.dll
+Copyright Microsoft
+Original software available from http://dlr.codeplex.com/

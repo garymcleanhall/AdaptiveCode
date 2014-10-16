@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtypeCovariance", "SubtypeCovariance\SubtypeCovariance.csproj", "{45B29258-4D71-49CA-B844-5EF7266D5D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtypeCovarianceTests", "SubtypeCovarianceTests\SubtypeCovarianceTests.csproj", "{0A226CF7-B2F7-4CEE-ABAE-FB3BCAADEDBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45B29258-4D71-49CA-B844-5EF7266D5D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45B29258-4D71-49CA-B844-5EF7266D5D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45B29258-4D71-49CA-B844-5EF7266D5D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45B29258-4D71-49CA-B844-5EF7266D5D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A226CF7-B2F7-4CEE-ABAE-FB3BCAADEDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A226CF7-B2F7-4CEE-ABAE-FB3BCAADEDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A226CF7-B2F7-4CEE-ABAE-FB3BCAADEDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A226CF7-B2F7-4CEE-ABAE-FB3BCAADEDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

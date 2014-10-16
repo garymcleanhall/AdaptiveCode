@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ViewModels.TaskViewModel>
+@{
+    ViewBag.Title = "Task List";  
+}
+
+<div class="hero-unit">
+    <h1>Task List</h1>
+</div>
+<div class="row">
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Completed</th>
+        </tr>
+
+        @foreach (var task in Model)
+        {
+
+            <tr>
+                <td>@task.ID</td>
+                <td>@task.Description</td>
+                <td>@task.DueDate</td>
+                <td>@task.Priority</td>
+                <td>@task.Completed</td>
+            </tr>
+            
+        }
+
+    </table>
+</div>

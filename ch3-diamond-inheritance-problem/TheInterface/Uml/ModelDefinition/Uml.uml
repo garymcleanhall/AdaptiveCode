@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ef896f95-1530-4b2e-a8fd-566e4837aa88"
+  name="Uml" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="8c82773d-d7f5-4f4b-bcae-e7ffc8820481"
+        name="BaseClassOne"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="74b8878a-b736-49d7-bb54-dfd077a26c7c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="dae27712-d25d-4c20-b892-019392439136"
+              LastKnownName="RootClass"
+              LastKnownLocation="Uml.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ab828423-d861-4b91-a1d9-ef5a5046d691"
+            name="MethodOne"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fa4d6393-4a5e-43ce-97d5-f5fc3008011c"
+        name="BaseClassTwo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c8cdef66-9110-4e72-bb61-948a00c7c3bd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="dae27712-d25d-4c20-b892-019392439136"
+              LastKnownName="RootClass"
+              LastKnownLocation="Uml.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6a84e6b9-e6fe-421d-9754-9eda71325f00"
+            name="MethodTwo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a3a91241-9bd9-4ce9-ba69-52b8e13a0899"
+        name="AttemptedMultipleInheritance"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ff1cafb0-90eb-4e41-9ff0-4ae2d06077d2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8c82773d-d7f5-4f4b-bcae-e7ffc8820481"
+              LastKnownName="BaseClassOne"
+              LastKnownLocation="Uml.uml" />
+          </generalization>
+          <generalization
+            Id="658c77e6-c129-4b26-bb63-d9eed400efe0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fa4d6393-4a5e-43ce-97d5-f5fc3008011c"
+              LastKnownName="BaseClassTwo"
+              LastKnownLocation="Uml.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fe558b94-96c8-471b-a279-133fd84f7c74"
+            name="WhichRootMethod?"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="61940e95-8caf-4aca-8c63-532de06f3d6d"
+            name="MethodOne"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="954b76e9-69f0-4f72-a3c0-b0505d9edf60"
+            name="MethodTwo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dae27712-d25d-4c20-b892-019392439136"
+        name="RootClass"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="c58d8551-0afd-4060-b848-9ff51db6317e"
+            name="RootMethod"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

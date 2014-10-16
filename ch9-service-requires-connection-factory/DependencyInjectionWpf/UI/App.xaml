@@ -1,0 +1,9 @@
+﻿<Application x:Class="UI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Startup="OnApplicationStartup"
+             Exit="OnApplicationExit">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

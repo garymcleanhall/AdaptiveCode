@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="46d02504-f1e9-4ec5-89d9-713fff7e9599" name="MultipleInheritance" linkedPackageId="53e121b4-1c2e-4bbc-bf7b-b738fd44e828" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8b962152-f3e8-4b1a-b297-9e0f3fac4219">
+      <profileInstance Id="c02f8750-6ed7-4203-b301-6297523fe5ab" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6184ee8d-53f1-4934-a013-eeda9783f795">
+      <profileInstance Id="947b159d-f410-4c10-94f2-ea10e1998aa4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="199edfc6-af9f-48db-9d58-1d98f96e8e2e" name="BaseClassOne" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8c82773d-d7f5-4f4b-bcae-e7ffc8820481" />
+        <generalsInternal>
+          <generalization Id="31388fcc-9e65-4bc4-aed0-7cc4ca29a032" isSubstitutable="false">
+            <classMoniker Id="15008a6b-0c44-4639-a02e-0ed75fa6da1b" LastKnownName="RootClass" />
+            <elementDefinition Id="74b8878a-b736-49d7-bb54-dfd077a26c7c" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="bc19e6a1-b243-4471-b42b-7b72ee10916e" name="MethodOne" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ab828423-d861-4b91-a1d9-ef5a5046d691" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bf57be4a-f9f5-4c88-acb1-e91ef191e938" name="BaseClassTwo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fa4d6393-4a5e-43ce-97d5-f5fc3008011c" />
+        <generalsInternal>
+          <generalization Id="74a88196-ed59-4ab3-82b8-918302ee44b8" isSubstitutable="false">
+            <classMoniker Id="15008a6b-0c44-4639-a02e-0ed75fa6da1b" LastKnownName="RootClass" />
+            <elementDefinition Id="c8cdef66-9110-4e72-bb61-948a00c7c3bd" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="06aaea42-1fc3-4d1f-a3b0-f88d1689a019" name="MethodTwo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6a84e6b9-e6fe-421d-9754-9eda71325f00" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bb936a3c-14c3-48b3-9928-2efa4c7d2db4" name="AttemptedMultipleInheritance" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a3a91241-9bd9-4ce9-ba69-52b8e13a0899" />
+        <generalsInternal>
+          <generalization Id="a5913dea-4584-46a8-8ce9-334fdd7f8465" isSubstitutable="false">
+            <classMoniker Id="199edfc6-af9f-48db-9d58-1d98f96e8e2e" LastKnownName="BaseClassOne" />
+            <elementDefinition Id="ff1cafb0-90eb-4e41-9ff0-4ae2d06077d2" />
+          </generalization>
+          <generalization Id="f99076f1-fe76-483f-8221-4d6cc71fed2c" isSubstitutable="false">
+            <classMoniker Id="bf57be4a-f9f5-4c88-acb1-e91ef191e938" LastKnownName="BaseClassTwo" />
+            <elementDefinition Id="658c77e6-c129-4b26-bb63-d9eed400efe0" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="b437e5bd-d098-402e-981d-a0639d9cbbcc" name="WhichRootMethod?" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fe558b94-96c8-471b-a279-133fd84f7c74" />
+          </operation>
+          <operation Id="bcebc00f-43a4-4dbd-bf2a-48bd5702ce00" name="MethodOne" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="61940e95-8caf-4aca-8c63-532de06f3d6d" />
+          </operation>
+          <operation Id="4de6233c-3b7c-4703-bfa9-560dd11cebca" name="MethodTwo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="954b76e9-69f0-4f72-a3c0-b0505d9edf60" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="15008a6b-0c44-4639-a02e-0ed75fa6da1b" name="RootClass" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dae27712-d25d-4c20-b892-019392439136" />
+        <ownedOperationsInternal>
+          <operation Id="7c1bb7c2-8e7b-404e-8542-4dc0d80de46d" name="RootMethod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c58d8551-0afd-4060-b848-9ff51db6317e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="53e121b4-1c2e-4bbc-bf7b-b738fd44e828" name="Uml">
+    <elementDefinition Id="ef896f95-1530-4b2e-a8fd-566e4837aa88" />
+  </package>
+</logicalClassDesignerModel>

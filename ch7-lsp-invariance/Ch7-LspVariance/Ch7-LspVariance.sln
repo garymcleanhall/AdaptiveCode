@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invariance", "Invariance\Invariance.csproj", "{461D7547-88D6-4EA8-98CD-B77213032871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvarianceTests", "InvarianceTests\InvarianceTests.csproj", "{7EF8590F-812C-4383-B0F1-591D3BB1BBBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{461D7547-88D6-4EA8-98CD-B77213032871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461D7547-88D6-4EA8-98CD-B77213032871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461D7547-88D6-4EA8-98CD-B77213032871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461D7547-88D6-4EA8-98CD-B77213032871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF8590F-812C-4383-B0F1-591D3BB1BBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF8590F-812C-4383-B0F1-591D3BB1BBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF8590F-812C-4383-B0F1-591D3BB1BBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF8590F-812C-4383-B0F1-591D3BB1BBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

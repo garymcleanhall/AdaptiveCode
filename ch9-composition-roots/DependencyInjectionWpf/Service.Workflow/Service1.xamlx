@@ -1,0 +1,65 @@
+﻿<WorkflowService ConfigurationName="Service1" Name="Service1"  
+    mc:Ignorable="sap2010"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#"
+    xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+    xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+    xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" 
+    xmlns="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
+    xmlns:contract="http://tempuri.org/"
+    xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities"
+    xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"> 
+    <p:TextExpression.Namespaces>
+        <sco:Collection x:TypeArguments="x:String" x:Name="__ReferenceID1">
+            <x:String>System</x:String>
+            <x:String>System.Collections.Generic</x:String>
+            <x:String>System.Data</x:String>
+            <x:String>System.Linq</x:String>
+            <x:String>System.Text</x:String>
+        </sco:Collection>
+    </p:TextExpression.Namespaces>
+    <p:TextExpression.References>
+        <sco:Collection x:TypeArguments="p:AssemblyReference" x:Name="__ReferenceID2">
+            <p:AssemblyReference>mscorlib</p:AssemblyReference>
+            <p:AssemblyReference>System</p:AssemblyReference>
+            <p:AssemblyReference>System.Core</p:AssemblyReference>
+            <p:AssemblyReference>System.Data</p:AssemblyReference>
+            <p:AssemblyReference>System.ServiceModel</p:AssemblyReference>
+            <p:AssemblyReference>System.Xml</p:AssemblyReference>
+        </sco:Collection>
+    </p:TextExpression.References>
+  <p:Sequence DisplayName="Sequential Service" sad:XamlDebuggerXmlReader.FileName="C:\dev\AdaptiveCode\DependencyInjectionWpf\Service.Workflow\Service1.xamlx"  
+              p:TextExpression.Namespaces="{x:Reference __ReferenceID1}" p:TextExpression.References="{x:Reference __ReferenceID2}">
+    
+    <p:Sequence.Variables>
+      <p:Variable x:TypeArguments="CorrelationHandle" Name="handle" />
+      <p:Variable x:TypeArguments="x:Int32" Name="data" />
+    </p:Sequence.Variables>
+    <Receive x:Name="__ReferenceID0" DisplayName="ReceiveRequest" OperationName="GetData" ServiceContractName="contract:IService" CanCreateInstance="True">   
+      <Receive.CorrelationInitializers>
+        <RequestReplyCorrelationInitializer>
+          <RequestReplyCorrelationInitializer.CorrelationHandle>
+            <p:InArgument x:TypeArguments="CorrelationHandle">
+              <mca:CSharpValue x:TypeArguments="CorrelationHandle">handle</mca:CSharpValue>
+            </p:InArgument>
+          </RequestReplyCorrelationInitializer.CorrelationHandle>
+        </RequestReplyCorrelationInitializer>
+      </Receive.CorrelationInitializers>
+      <ReceiveMessageContent>
+        <p:OutArgument x:TypeArguments="x:Int32">
+          <mca:CSharpReference x:TypeArguments="x:Int32">data</mca:CSharpReference>
+        </p:OutArgument>
+      </ReceiveMessageContent>
+    </Receive>    
+    <SendReply Request="{x:Reference Name=__ReferenceID0}" DisplayName="SendResponse" >
+      <SendMessageContent>
+        <p:InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">data.ToString()</mca:CSharpValue>
+        </p:InArgument>
+      </SendMessageContent>
+    </SendReply>
+    
+  </p:Sequence>
+  
+</WorkflowService>

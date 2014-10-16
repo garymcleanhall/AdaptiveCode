@@ -1,0 +1,14 @@
+**
+**  NOTICE file corresponding to the section 4 (4) of the Apache License, 
+**  Version 2.0.
+**
+
+re-motion Framework
+www.re-motion.org
+Copyright (c) rubicon IT GmbH, www.rubicon.eu
+
+This software includes the following libraries:
+
+Microsoft Dynamic Language Runtime
+Copyright (c) Microsoft Corporation
+Original software available from http://dlr.codeplex.com/
