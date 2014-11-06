@@ -1,0 +1,12 @@
+﻿
+CREATE DATABASE Sermo;
+
+USE Sermo;
+GO;
+
+CREATE TABLE room
+(
+	id INTEGER PRIMARY KEY NOT NULL,
+	name nvarchar(50) UNIQUE NOT NULL
+);
+

@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sermo.UI", "Sermo.UI\Sermo.UI.csproj", "{3AAE4E90-CCD1-4193-89E5-DE1F7238F4C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sermo.UnitTests", "Sermo.UnitTests\Sermo.UnitTests.csproj", "{D4832A97-D204-4D35-A409-53BBCF45DD60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sermo.Data.Contracts", "Sermo.Contracts\Sermo.Data.Contracts.csproj", "{CD8DEEC7-E059-4124-B0C1-8BC4782A6050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sermo.Data.AdoNet", "Sermo.SqlServer\Sermo.Data.AdoNet.csproj", "{CFFE2B5C-80F6-4181-966E-60BF38F326DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{70817D3E-AA0D-44A8-B99D-1C2A48B7F021}"
+	ProjectSection(SolutionItems) = preProject
+		Sermo.Database.sql = Sermo.Database.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sermo.UI.Contracts", "Sermo.UI.Contracts\Sermo.UI.Contracts.csproj", "{5CDD0F0D-48BF-4356-BC48-B256FF9BB4BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sermo.UI.Controllers", "Sermo.UI.Controllers\Sermo.UI.Controllers.csproj", "{78DC74CE-667B-4C7C-9BF6-FDF9EA80DB90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sermo.Infrastructure.Contracts", "Sermo.Infrastructure.Contracts\Sermo.Infrastructure.Contracts.csproj", "{751E8BD7-FBF1-4DB3-8B73-610F119B747A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{68F688B5-22CE-4791-AFF8-650C319CF11E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EDB8DD90-732D-47B7-9ECD-D446376E72FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{0D9ADFF9-05DD-4C9A-8C02-5B34D992D439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sermo.Markdown", "Sermo.Markdown\Sermo.Markdown.csproj", "{8AD8D34C-7E38-4366-9FCF-F8E9BF3A8CC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocumentStorage", "DocumentStorage", "{2FEFE65A-6B50-45E9-8192-6D5DA6BCC3AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sermo.Data.Mongo", "Sermo.Data.Mongo\Sermo.Data.Mongo.csproj", "{8AC35BEB-25F5-483C-BFCF-42F210C9D880}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AAE4E90-CCD1-4193-89E5-DE1F7238F4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAE4E90-CCD1-4193-89E5-DE1F7238F4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAE4E90-CCD1-4193-89E5-DE1F7238F4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAE4E90-CCD1-4193-89E5-DE1F7238F4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4832A97-D204-4D35-A409-53BBCF45DD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4832A97-D204-4D35-A409-53BBCF45DD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4832A97-D204-4D35-A409-53BBCF45DD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4832A97-D204-4D35-A409-53BBCF45DD60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD8DEEC7-E059-4124-B0C1-8BC4782A6050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8DEEC7-E059-4124-B0C1-8BC4782A6050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8DEEC7-E059-4124-B0C1-8BC4782A6050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8DEEC7-E059-4124-B0C1-8BC4782A6050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFE2B5C-80F6-4181-966E-60BF38F326DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFE2B5C-80F6-4181-966E-60BF38F326DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFE2B5C-80F6-4181-966E-60BF38F326DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFE2B5C-80F6-4181-966E-60BF38F326DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CDD0F0D-48BF-4356-BC48-B256FF9BB4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDD0F0D-48BF-4356-BC48-B256FF9BB4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDD0F0D-48BF-4356-BC48-B256FF9BB4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDD0F0D-48BF-4356-BC48-B256FF9BB4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78DC74CE-667B-4C7C-9BF6-FDF9EA80DB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78DC74CE-667B-4C7C-9BF6-FDF9EA80DB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78DC74CE-667B-4C7C-9BF6-FDF9EA80DB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78DC74CE-667B-4C7C-9BF6-FDF9EA80DB90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{751E8BD7-FBF1-4DB3-8B73-610F119B747A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751E8BD7-FBF1-4DB3-8B73-610F119B747A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751E8BD7-FBF1-4DB3-8B73-610F119B747A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751E8BD7-FBF1-4DB3-8B73-610F119B747A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AD8D34C-7E38-4366-9FCF-F8E9BF3A8CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AD8D34C-7E38-4366-9FCF-F8E9BF3A8CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AD8D34C-7E38-4366-9FCF-F8E9BF3A8CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AD8D34C-7E38-4366-9FCF-F8E9BF3A8CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC35BEB-25F5-483C-BFCF-42F210C9D880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC35BEB-25F5-483C-BFCF-42F210C9D880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC35BEB-25F5-483C-BFCF-42F210C9D880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC35BEB-25F5-483C-BFCF-42F210C9D880}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4832A97-D204-4D35-A409-53BBCF45DD60} = {EDB8DD90-732D-47B7-9ECD-D446376E72FA}
+		{CD8DEEC7-E059-4124-B0C1-8BC4782A6050} = {70817D3E-AA0D-44A8-B99D-1C2A48B7F021}
+		{CFFE2B5C-80F6-4181-966E-60BF38F326DC} = {70817D3E-AA0D-44A8-B99D-1C2A48B7F021}
+		{5CDD0F0D-48BF-4356-BC48-B256FF9BB4BA} = {0D9ADFF9-05DD-4C9A-8C02-5B34D992D439}
+		{78DC74CE-667B-4C7C-9BF6-FDF9EA80DB90} = {0D9ADFF9-05DD-4C9A-8C02-5B34D992D439}
+		{8AD8D34C-7E38-4366-9FCF-F8E9BF3A8CC2} = {0D9ADFF9-05DD-4C9A-8C02-5B34D992D439}
+		{8AC35BEB-25F5-483C-BFCF-42F210C9D880} = {2FEFE65A-6B50-45E9-8192-6D5DA6BCC3AA}
+	EndGlobalSection
+EndGlobal
