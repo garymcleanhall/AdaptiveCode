@@ -27,7 +27,7 @@ namespace SingleResponsibilityPrinciple
             var lineCount = 1;
             foreach (var line in lines)
             {
-                var fields = line.Split(new char[] { '.' });
+                var fields = line.Split(new char[] { ',' });
 
                 if(fields.Length != 3)
                 {
