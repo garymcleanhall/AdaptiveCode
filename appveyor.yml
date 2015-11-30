@@ -1,5 +1,5 @@
 before_build:
-  - nuget restore
+  - nuget restore .\Chapter1\ch1-test-overspecification\TestOverspecification\TestOverspecification.sln
 
 build:
   project: .\Chapter1\ch1-test-overspecification\TestOverspecification\TestOverspecification.sln
