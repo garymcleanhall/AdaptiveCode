@@ -13,6 +13,7 @@ namespace TestOverspecification.Controllers
 
         public ActionResult Login(string username, string password)
         {
+            _loginService.CheckCredentials(username, password);
             return Redirect("/");
         }
 
