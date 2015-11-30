@@ -7,8 +7,8 @@
     <ProjectGuid>{1962B717-3075-418A-B213-F38F99E97B41}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Calculator</RootNamespace>
-    <AssemblyName>Calculator</AssemblyName>
+    <RootNamespace>TestOverspecification.Controllers</RootNamespace>
+    <AssemblyName>TestOverspecification.Controllers</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
