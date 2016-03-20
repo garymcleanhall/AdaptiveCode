@@ -6,33 +6,30 @@ namespace SingleResponsibilityPrinciple
 {
     public class SimpleTradeParser : ITradeParser
     {
-        private readonly ITradeValidator tradeValidator;
-        private readonly ITradeMapper tradeMapper;
+        private readonly ITradeValidator _tradeValidator;
+        private readonly ITradeMapper _tradeMapper;
 
         public SimpleTradeParser(ITradeValidator tradeValidator, ITradeMapper tradeMapper)
         {
-            this.tradeValidator = tradeValidator;
-            this.tradeMapper = tradeMapper;
+            _tradeValidator = tradeValidator;
+            _tradeMapper = tradeMapper;
         }
 
         public IEnumerable<TradeRecord> Parse(IEnumerable<string> tradeData)
         {
-            var trades = new List<TradeRecord>();
-            var lineCount = 1;
-            foreach (var line in tradeData)
+            List<TradeRecord> trades = new List<TradeRecord>();
+            foreach (string line in tradeData)
             {
-                var fields = line.Split(new char[] { ',' });
+                string[] fields = line.Split(',');
 
-                if (!tradeValidator.Validate(fields))
+                if (!_tradeValidator.Validate(fields))
                 {
                     continue;
                 }
 
-                var trade = tradeMapper.Map(fields);
+                TradeRecord trade = _tradeMapper.Map(fields);
 
                 trades.Add(trade);
-
-                lineCount++;
             }
 
             return trades;
