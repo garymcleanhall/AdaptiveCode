@@ -43,6 +43,7 @@
     <Compile Include="ITradeDataProvider.cs" />
     <Compile Include="ITradeMapper.cs" />
     <Compile Include="ITradeParser.cs" />
+    <Compile Include="ITradeProcessor.cs" />
     <Compile Include="ITradeStorage.cs" />
     <Compile Include="ITradeValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
