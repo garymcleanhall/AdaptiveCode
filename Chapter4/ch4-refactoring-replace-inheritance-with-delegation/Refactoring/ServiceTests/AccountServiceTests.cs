@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Domain;
+using Domain.Factories;
 using Domain.Repositories;
 using Services;
 
@@ -17,14 +18,15 @@ namespace ServiceTests
         public void CanCreateAGoldAccount()
         {
             // Arrange
+            var accountFactory = new Mock<IAccountFactory>();
             var accountRepository = new Mock<IAccountRepository>();
-            var sut = new AccountService(accountRepository.Object);
+            var sut = new AccountService(accountFactory.Object, accountRepository.Object);
 
             // Act
             sut.CreateAccount(RewardCardType.Gold);
 
             // Assert
-            accountRepository.Verify(ar => ar.NewAccount(It.IsAny<AccountBase>()));
+            accountRepository.Verify(ar => ar.NewAccount(It.IsAny<Account>()));
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheInterface
 {
-    public class AttemptedMultipleInheritance : BaseClassOne, BaseClassTwo
+    public class AttemptedMultipleInheritance : BaseClassOne /*, BaseClassTwo */ // uncommenting this multiple inheritance will force compilation failure
     {
     }
 }

@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
+using SubtypeContravariance;
 
-using SubtypeCovariance;
-
-using NUnit.Framework;
-using FluentAssertions;
-
-namespace SubtypeCovarianceTests
+namespace SubtypeContravarianceTests
 {
     /// <remarks>
     /// NOTE: These tests will not be runnable, because the `SubtypeContravariance` assembly cannot be built.
@@ -31,7 +23,9 @@ namespace SubtypeCovarianceTests
         {
             var userRepository = new UserRepository();
             object userAsObject = new User();
-            userRepository.Save(userAsObject);
+            // This attempt to save will not compile because 
+            // we are treating the user as an `object` instance
+            // userRepository.Save(userAsObject);
         }
     }
 }

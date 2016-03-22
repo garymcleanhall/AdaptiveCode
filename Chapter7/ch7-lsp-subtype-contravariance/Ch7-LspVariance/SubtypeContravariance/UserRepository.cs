@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SubtypeCovariance
+﻿namespace SubtypeContravariance
 {
     public class UserRepository : EntityRepository
     {
-        public override void Save(object user)
-        {
-            
-        }
+        // This will not compile because subtypes cannot exhibit contravariance
+        //public override void Save(object user)
+        //{
+
+        //}
     }
 }
