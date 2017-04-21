@@ -62,4 +62,7 @@
     <Build Include="trade.sql" />
     <Build Include="insert_trade.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
 </Project>
